@@ -21,4 +21,13 @@ void loop()
     Serial.print('Distance : ')
     Serial.print(distance);
     Serial.printIn(" cm");
+
+    //check if an obstacle is detected in the distance
+    if(distance < thresholdDistance)
+    {
+        pinMode(relayPin, LOW);
+        Serial.printIn("An objected has been detected. Turn motor off")
+    }
+    else{
+    }
 }
