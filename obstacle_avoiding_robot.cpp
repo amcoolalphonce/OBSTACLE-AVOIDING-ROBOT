@@ -30,7 +30,7 @@ void loop()
     }
     else{
         pinMode(relayPin, HIGH);
-        Serial.printIn("No object detected.")// motor moves
-
+        Serial.printIn("No object detected.");// motor moves
     }
+    delay(100);
 }
