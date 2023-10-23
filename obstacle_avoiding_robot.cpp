@@ -26,8 +26,11 @@ void loop()
     if(distance < thresholdDistance)
     {
         pinMode(relayPin, LOW);
-        Serial.printIn("An objected has been detected. Turn motor off")
+        Serial.printIn("An objected has been detected. Turn motor off");
     }
     else{
+        pinMode(relayPin, HIGH);
+        Serial.printIn("No object detected.")// motor moves
+
     }
 }
