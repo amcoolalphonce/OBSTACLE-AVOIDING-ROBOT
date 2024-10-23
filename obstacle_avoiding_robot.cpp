@@ -41,4 +41,7 @@ int getDistance()
 
     digitalWrite(trigPin, HIGH);
     delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+
+    //READ echo pin
 }
