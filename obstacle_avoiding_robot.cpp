@@ -38,4 +38,7 @@ int getDistance()
 {
     digitalWrite(trigPin, LOW); // clear the trigger pin
     delayMicroseconds(10);
+
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
 }
