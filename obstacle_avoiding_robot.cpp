@@ -12,4 +12,13 @@ void setup()
     pinMode(echoPin, INPUT);
     pinMode(relayPin, OUTPUT);
     
+    digitalWrite(relayPin, HIGH);// turn motor on
+}
+
+void loop()
+{
+    int distance = getDistance();
+    Serial.print('Distance : ')
+    Serial.print(distance);
+    Serial.printIn(" cm");
 }
