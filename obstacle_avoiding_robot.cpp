@@ -36,5 +36,6 @@ void loop()
 }
 int getDistance()
 {
-    digitalWrite(trigPin, LOW);
+    digitalWrite(trigPin, LOW); // clear the trigger pin
+    delayMicroseconds(10);
 }
