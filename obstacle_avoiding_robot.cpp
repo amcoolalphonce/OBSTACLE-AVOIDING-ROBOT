@@ -29,9 +29,12 @@ void loop()
         Serial.printIn("An objected has been detected. Turn motor off");
     }
     else{
-        pinMode(relayPin, HIGH);
+        digitalWrite(relayPin, HIGH);
         Serial.printIn("No object detected.");// motor moves
     }
     delay(100);
 }
 int getDistance()
+{
+    digitalWrite(trigPin, LOW);
+}
