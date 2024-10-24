@@ -47,5 +47,5 @@ int getDistance()
     long duration = pulseIn(echoPin, HIGH);
     int distance = duration * 0.034/2;
 
-    retrun distance;
+    return distance;
 }
