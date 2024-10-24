@@ -43,5 +43,7 @@ int getDistance()
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
 
-    //READ echo pin
+    //READ echo pin abd claculte the duration
+    long duration = pulseIn(echoPin, HIGH);
+    int distance = duration * 0.034/2;
 }
